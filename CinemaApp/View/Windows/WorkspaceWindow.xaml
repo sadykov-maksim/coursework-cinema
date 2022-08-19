@@ -9,7 +9,7 @@
         Title="WorkspaceWindow">
     <Border x:Name="Wrapper">
         <Grid x:Name="MainRoot">
-
+            
         </Grid>
     </Border>
 </Window>

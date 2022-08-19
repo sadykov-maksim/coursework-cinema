@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Семейство шрифтов Roboto -->
+    <FontFamily x:Key="RobotoThin">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Thin.ttf#Roboto Thin</FontFamily>
+    <FontFamily x:Key="RobotoThinItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-ThinItalic.ttf#Roboto Thin Italic</FontFamily>
+    <FontFamily x:Key="RobotoLight">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Light.ttf#Roboto Light</FontFamily>
+    <FontFamily x:Key="RobotoLightItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-LightItalic.ttf#Roboto Light Italic</FontFamily>
+    <FontFamily x:Key="RobotoRegular">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Regular.ttf#Roboto Regular</FontFamily>
+    <FontFamily x:Key="RobotoItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Italic.ttf#Roboto Italic</FontFamily>
+    <FontFamily x:Key="RobotoMedium">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Medium.ttf#Roboto Medium</FontFamily>
+    <FontFamily x:Key="RobotoMediumItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-MediumItalic.ttf#Roboto Medium Italic</FontFamily>
+    <FontFamily x:Key="RobotoBold">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Bold.ttf#Roboto Bold</FontFamily>
+    <FontFamily x:Key="RobotoBoldItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-BoldItalic.ttf#Roboto Bold Italic</FontFamily>
+    <FontFamily x:Key="RobotoBlack">pack://application:,,,/Assets/Fonts/Roboto/Roboto-Black.ttf#Roboto Black</FontFamily>
+    <FontFamily x:Key="RobotoBlackItalic">pack://application:,,,/Assets/Fonts/Roboto/Roboto-BlackItalic.ttf#Roboto Black Italic</FontFamily>
+    <!-- Семейство шрифтов Roboto Condensed -->
+    <FontFamily x:Key="RobotoCondensedLight">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-Light.ttf#Roboto Condensed Light</FontFamily>
+    <FontFamily x:Key="RobotoCondensedLightItalic">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-LightItalic.ttf#Roboto Condensed Light Italic</FontFamily>
+    <FontFamily x:Key="RobotoCondensedRegular">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-Regular.ttf#Roboto Condensed Regular</FontFamily>
+    <FontFamily x:Key="RobotoCondensedItalic">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-Italic.ttf#Roboto Condensed Italic</FontFamily>
+    <FontFamily x:Key="RobotoCondensedMedium">pack://application:,,,/Assets/Fonts/RobotoCondensed/Roboto-CondensedMedium.ttf#Roboto Condensed Medium</FontFamily>
+    <FontFamily x:Key="RobotoCondensedMediumItalic">pack://application:,,,/Assets/Fonts/RobotoCondensed/Roboto-CondensedMediumItalic.ttf#Roboto Condensed Medium Italic</FontFamily>
+    <FontFamily x:Key="RobotoCondensedBold">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-Bold.ttf#Roboto Condensed Bold</FontFamily>
+    <FontFamily x:Key="RobotoCondensedBoldItalic">pack://application:,,,/Assets/Fonts/RobotoCondensed/RobotoCondensed-BoldItalic.ttf#Roboto Condensed Bold Italic</FontFamily>
+    <FontFamily x:Key="RobotoCondensedBlack">pack://application:,,,/Assets/Fonts/RobotoCondensed/Roboto-CondensedBlack.ttf#Roboto Condensed Black</FontFamily>
+    <FontFamily x:Key="RobotoCondensedBlackItalic">pack://application:,,,/Assets/Fonts/RobotoCondensed/Roboto-CondensedBlackItalic.ttf#Roboto Condensed Black Italic</FontFamily>
+</ResourceDictionary>

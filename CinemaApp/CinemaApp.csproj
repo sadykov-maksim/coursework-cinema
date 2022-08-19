@@ -14,16 +14,50 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.coursework-cinema.host/domains/coursework-cinema.host/public_html/publish/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://coursework-cinema.host/publish/</InstallUrl>
+    <SupportUrl>https://coursework-cinema.host/support</SupportUrl>
+    <ErrorReportUrl>https://coursework-cinema.host/critical-error</ErrorReportUrl>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>Кинотеатр «Кинолента»</ProductName>
+    <PublisherName>Comet Code Inc.</PublisherName>
+    <SuiteName>Система управления кинотеатром.</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>0.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\CinemaApp.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,10 +67,50 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\CinemaApp.xml</DocumentationFile>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Assets\Images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FD44F68333FB99CC4C4262DE46497D73F5B29FD4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CinemaApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CinemaApp_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CinemaApp.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,7 +129,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="WorkspaceWindow.xaml">
+    <Page Include="Assets\Dictionaries\ColorSchemeDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Dictionaries\FontDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Dictionaries\IconDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Dictionaries\ProjectDesignDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\Authentication\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\Authentication\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\Authentication\RestorePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\AuthenticationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\SplashScreenWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\WorkspaceWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,7 +173,38 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WorkspaceWindow.xaml.cs">
+    <Compile Include="Model\Core.cs" />
+    <Compile Include="Model\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Authentication\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Authentication\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Authentication\RestorePage.xaml.cs">
+      <DependentUpon>RestorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\AuthenticationWindow.xaml.cs">
+      <DependentUpon>AuthenticationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\SplashScreenWindow.xaml.cs">
+      <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WorkspaceWindow.xaml.cs">
       <DependentUpon>WorkspaceWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -85,7 +226,39 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Black.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-BlackItalic.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Bold.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-BoldItalic.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Italic.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Light.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-LightItalic.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Medium.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-MediumItalic.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-Thin.ttf" />
+    <Resource Include="Assets\Fonts\Roboto\Roboto-ThinItalic.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-Bold.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-BoldItalic.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-Italic.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-Light.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-LightItalic.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\RobotoCondensed-Regular.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\Roboto-CondensedBlack.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\Roboto-CondensedBlackItalic.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\Roboto-CondensedMedium.ttf" />
+    <Resource Include="Assets\Fonts\RobotoCondensed\Roboto-CondensedMediumItalic.ttf" />
+    <None Include="CinemaApp_TemporaryKey.pfx" />
+    <None Include="Model\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +266,109 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Dictionaries\Controls\" />
+    <Folder Include="Assets\Images\Workspace\Movie\" />
+    <Folder Include="Assets\Images\Workspace\Person\" />
+    <Folder Include="Assets\Images\Workspace\Studio\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Model\PartialClasses\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="View\Controls\" />
+    <Folder Include="View\Pages\Workspace\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\Workspace\Genre\Action.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Adventures.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Anime.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Biographies.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Cartoons.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Childish.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Comedy.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Concerts.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Crime.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Detectives.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Documentaries.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Drama.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Family.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Fantastic.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Fantasy.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\FilmNoir.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Games.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Historical.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Horror.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Melodramas.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Military.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Musical.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Musicals.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\News.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\RealTV.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\ShortFilms.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Sports.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\TalkShow.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Thrillers.png" />
+    <Resource Include="Assets\Images\Workspace\Genre\Westerns.png" />
+    <Resource Include="Assets\Images\Workspace\Country\at.png" />
+    <Resource Include="Assets\Images\Workspace\Country\au.png" />
+    <Resource Include="Assets\Images\Workspace\Country\be.png" />
+    <Resource Include="Assets\Images\Workspace\Country\de.png" />
+    <Resource Include="Assets\Images\Workspace\Country\dk.png" />
+    <Resource Include="Assets\Images\Workspace\Country\es.png" />
+    <Resource Include="Assets\Images\Workspace\Country\fr.png" />
+    <Resource Include="Assets\Images\Workspace\Country\gr.png" />
+    <Resource Include="Assets\Images\Workspace\Country\hk.png" />
+    <Resource Include="Assets\Images\Workspace\Country\it.png" />
+    <Resource Include="Assets\Images\Workspace\Country\jp.png" />
+    <Resource Include="Assets\Images\Workspace\Country\kr.png" />
+    <Resource Include="Assets\Images\Workspace\Country\nl.png" />
+    <Resource Include="Assets\Images\Workspace\Country\no.png" />
+    <Resource Include="Assets\Images\Workspace\Country\ru.png" />
+    <Resource Include="Assets\Images\Workspace\Country\se.png" />
+    <Resource Include="Assets\Images\Workspace\Country\tr.png" />
+    <Resource Include="Assets\Images\Workspace\Country\uk.png" />
+    <Resource Include="Assets\Images\Workspace\Country\us.png" />
+    <Resource Include="Assets\Images\Workspace\AgeRestriction\0.png" />
+    <Resource Include="Assets\Images\Workspace\AgeRestriction\12.png" />
+    <Resource Include="Assets\Images\Workspace\AgeRestriction\16.png" />
+    <Resource Include="Assets\Images\Workspace\AgeRestriction\18.png" />
+    <Resource Include="Assets\Images\Workspace\AgeRestriction\6.png" />
+    <Resource Include="Assets\Images\favicon.ico" />
+    <Resource Include="Assets\Images\logo.png" />
+    <Content Include="Model\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.1.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,5 +13,9 @@ namespace CinemaApp
     /// </summary>
     public partial class App : Application
     {
+        private void ApplicationStartup(object sender, StartupEventArgs e)
+        {
+
+        }
     }
 }

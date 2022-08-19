@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Дизайн проекта -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/ColorSchemeDictionary.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/FontDictionary.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/IconDictionary.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
