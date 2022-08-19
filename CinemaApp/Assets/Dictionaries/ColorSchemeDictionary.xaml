@@ -3,4 +3,6 @@
     <!-- Основные цвета -->
     <SolidColorBrush Color="White" x:Key="White"/>
     <SolidColorBrush Color="Black" x:Key="Black"/>
+    <!-- Background -->
+    <SolidColorBrush Color="WhiteSmoke" x:Key="SplashScreenBG"></SolidColorBrush>
 </ResourceDictionary>

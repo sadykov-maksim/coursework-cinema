@@ -5,5 +5,7 @@
         <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/ColorSchemeDictionary.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/FontDictionary.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/IconDictionary.xaml"/>
+        <!-- Элементы управления -->
+        <ResourceDictionary Source="pack://application:,,,/Assets/Dictionaries/Controls/ButtonDictionary.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

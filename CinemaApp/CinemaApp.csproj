@@ -108,6 +108,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -130,6 +131,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Assets\Dictionaries\ColorSchemeDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Dictionaries\Controls\ButtonDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,6 +178,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\AssemblyClass.cs" />
+    <Compile Include="Classes\DatabaseClass.cs" />
     <Compile Include="Model\Core.cs" />
     <Compile Include="Model\Model.Context.cs">
       <AutoGen>True</AutoGen>
@@ -268,11 +275,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Dictionaries\Controls\" />
     <Folder Include="Assets\Images\Workspace\Movie\" />
     <Folder Include="Assets\Images\Workspace\Person\" />
     <Folder Include="Assets\Images\Workspace\Studio\" />
-    <Folder Include="Classes\" />
     <Folder Include="Controllers\" />
     <Folder Include="Model\PartialClasses\" />
     <Folder Include="ViewModel\" />

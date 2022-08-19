@@ -17,5 +17,28 @@ namespace CinemaApp
         {
 
         }
+        public void AppClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            if (e.Cancel == true)
+            {
+                MessageBoxButton messageBoxButton = MessageBoxButton.YesNo;
+                MessageBoxResult messageBoxResult = MessageBox.Show("Вы уверены, что хотите выйти из приложения?", "Выход из приложения", messageBoxButton, MessageBoxImage.Question);
+                switch (messageBoxResult)
+                {
+                    case MessageBoxResult.Yes:
+                        Environment.Exit(0);
+                        break;
+                    case MessageBoxResult.No:
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (e.Cancel == false)
+            {
+
+            }
+        }
     }
 }

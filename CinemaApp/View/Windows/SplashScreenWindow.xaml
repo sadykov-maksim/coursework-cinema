@@ -5,11 +5,95 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaApp.View.Windows"
         mc:Ignorable="d"
-        Width="400" Height="248"
-        Title="SplashScreenWindow">
-    <Border x:Name="Wrapper">
+        Width="410" Height="258"
+        Title="SplashScreenWindow" Icon="/Assets/Images/favicon.ico"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent" MouseDown="WindowMouseDown"  Loaded="WindowLoaded" Closing="WindowClosing" ResizeMode="NoResize" Initialized="WindowInitialized">
+    <Border x:Name="Wrapper" Background="{StaticResource SplashScreenBG}" CornerRadius="8" Margin="10">
         <Grid x:Name="MainRoot">
-
+            <Grid x:Name="SplashScreenRoot">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Border x:Name="BorderTop" Grid.Row="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="93"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="75"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="BorderTypeContainer" Grid.Column="0">
+                            <Border x:Name="BorderAppType" Background="#C5E1E6" Height="24" CornerRadius="4" Width="77">
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock x:Name="TBlockAppType" Text="Рабочее место" FontSize="9.5" Foreground="#265C76" FontFamily="{StaticResource RobotoCondensedMedium}"></TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </Border>
+                        <Border x:Name="BorderControlsContainer" Grid.Column="2">
+                            <Grid Grid.Column="2" Margin="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Border x:Name="BorderMinimizeContainer" Grid.Column="0" Margin="4.5 4.5 2.25 4.5">
+                                    <Button x:Name="BtnMinimize" Click="BtnMinimizeClick" Style="{StaticResource BtnMinimize}" Margin="2">
+                                        <Button.Content>
+                                            <Path Data="{StaticResource Minimize}" Fill="{Binding Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}"  Stretch="Uniform" Margin="7"/>
+                                        </Button.Content>
+                                    </Button>
+                                </Border>
+                                <Border x:Name="BorderCloseContainer" Grid.Column="1" Margin="2.25 4.5 4.5 4.5">
+                                    <Button x:Name="BtnClose" Click="BtnCloseClick" Style="{StaticResource BtnClose}" Margin="2">
+                                        <Button.Content>
+                                            <Path Data="{StaticResource Close}" Fill="{Binding Foreground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Button}}" Stretch="Uniform" Margin="7"/>
+                                        </Button.Content>
+                                    </Button>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border x:Name="BorderCentre" Grid.Row="1">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Border x:Name="BorderLogoContainer" Grid.Row="0">
+                                <Image x:Name="ImgLogo" Source="/Assets/Images/logo.png" Height="75"></Image>
+                            </Border>
+                            <Border x:Name="BorderTitleContainer" Grid.Row="1">
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 15 0 0">
+                                    <TextBlock x:Name="TBlockAppTitle" Foreground="#1D4659" FontSize="17.5" Text="Кинолента" FontFamily="{StaticResource RobotoCondensedBold}"></TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <Border x:Name="BorderBottom" Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="35"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="BorderStatusContainer" Grid.Column="0">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="5 0 0 0">
+                                <TextBlock x:Name="TBlockAppStatus" FontSize="9.5" Foreground="#343C47" FontFamily="{StaticResource RobotoCondensedMedium}"></TextBlock>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="BorderVersionContainer" Grid.Column="1">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock x:Name="TBlockAppVersion" FontSize="9.5" Foreground="#343C47" FontFamily="{StaticResource RobotoCondensedMedium}"></TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Grid>
         </Grid>
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="15" Color="LightGray" RenderingBias="Quality" ShadowDepth="0" Opacity="0.5"/>
+        </Border.Effect>
     </Border>
 </Window>
